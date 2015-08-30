@@ -1,0 +1,19 @@
+﻿<Application x:Class="ItemsControlArticle.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ItemsControlArticle"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="ThemeA" Color="#7887AB"/>
+        <SolidColorBrush x:Key="ThemeB" Color="#4F628E"/>
+        <SolidColorBrush x:Key="ThemeC" Color="#2E4272"/>
+        <SolidColorBrush x:Key="ThemeD" Color="#162955"/>
+        <SolidColorBrush x:Key="ThemeE" Color="#061539"/>
+
+        <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="Foreground" Value="{StaticResource ThemeA}"/>
+            <Setter Property="FontFamily" Value="Verdana,Trebuchet MS"/>
+        </Style>
+
+    </Application.Resources>
+</Application>
